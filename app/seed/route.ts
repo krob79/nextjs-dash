@@ -57,13 +57,12 @@ async function seedInvoices() {
 
 async function seedCustomers() {
   await sql`CREATE EXTENSION IF NOT EXISTS "uuid-ossp"`;
-
   await sql`
     CREATE TABLE IF NOT EXISTS customers (
       id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
       name VARCHAR(255) NOT NULL,
       email VARCHAR(255) NOT NULL,
-      image_url VARCHAR(255) NOT NULL
+      image_url VARCHAR(MAX) NOT NULL
     );
   `;
 

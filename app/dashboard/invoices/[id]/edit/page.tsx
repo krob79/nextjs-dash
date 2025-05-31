@@ -10,6 +10,7 @@ export const metadata: Metadata = {
  
 export default async function Page(props: {params: Promise<{id: string}>}) {
     const params = await props.params;
+    console.log("---INVOICE EDIT PAGE - params are: ", params);
     const id = params.id;
     const [invoice, customers] = await Promise.all([
         fetchInvoiceById(id),

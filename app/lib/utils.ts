@@ -67,3 +67,21 @@ export const generatePagination = (currentPage: number, totalPages: number) => {
     totalPages,
   ];
 };
+
+export const onImageUpdate = (): void => {
+    
+    const imageInput = document.getElementById("image_url") as HTMLInputElement;
+    const avatar = document.getElementById("avatar") as HTMLImageElement;
+    console.log("----onUpdate called ", imageInput.files, imageInput.files[0]);
+    if (imageInput.files && imageInput.files[0]) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        if (e.target && e.target.result) {
+          avatar.src = e.target.result as string;
+        }
+      };
+      reader.readAsDataURL(imageInput.files[0]);
+    } else {
+      avatar.src = '/customers/generic-customer.png'; // Fallback image
+    }
+}
