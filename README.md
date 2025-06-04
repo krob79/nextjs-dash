@@ -20,7 +20,7 @@ Deployed to Railway.app
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat-square)
 ![Static Badge](https://img.shields.io/badge/(.*)-RegEx-pink?logoColor=pink&labelColor=pink)
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=grey&style=flat-square)
-![SQL](https://img.shields.io/badge/-SQLite-044a64?logo=sqlite&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-044a64?logo=sql&logoColor=white)
 
 
 ![NodeJS](https://img.shields.io/badge/-NodeJS-007E38?logo=nodedotjs&logoColor=white)
